@@ -1,8 +1,9 @@
 const angular = require('angular');
-require('angular-ui-router')
+require('angular-ui-router');
+// require('angular-animate')
 
 angular
-  .module('mywork', ['ui.router'])
+  .module('mywork', ['ui.router', 'ngAnimate'])
   .config(uiRouterSetup);
 
   uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
