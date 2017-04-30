@@ -4,18 +4,23 @@ body {
 
 }
 .box {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   float: left;
-  /*background-color: red;*/
+  background-color: red;
   width: 50%;
   height: auto;
-  t
+
+
+  /*overflow: inherit;*/
+
 }
 
 .about {
   width: 60%;
   margin: 75px auto;
+
 }
 
 .initial {
@@ -58,12 +63,14 @@ body {
   /*background-color: blue;*/
   width: 50%;
   height: auto;
+  /*overflow-y: scroll;*/
 }
 .box-item {
   display:flex;
   justify-content: flex-end;
   align-items: center;
   margin-right: 75px;
+
 }
 
 
@@ -89,6 +96,7 @@ img{
   height: 250px;
 }
 
+
 .left {
   position: relative;
   bottom: -20px;
@@ -98,6 +106,16 @@ img{
   position: relative;
   top: -70px;
 }
+
+
+.raised {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.raised:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 /*h1 {
   font-size: 14px;
   color: blue;
@@ -105,6 +123,7 @@ img{
 @media all and (max-width: 650px) {
   .box {
     width: 100%;
+    position: static;
   }
 }
 @media all and (max-width: 650px) {
