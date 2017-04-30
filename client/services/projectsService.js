@@ -12,4 +12,5 @@ angular
       function loadAll() {
         return $http.get('/projects');
       }
+
   };

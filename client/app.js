@@ -21,6 +21,10 @@ angular
       url: '/list',
       template: '<list></list>'
     })
+    .state('blackjack', {
+      url: '/blackjack',
+      template: '<blackjack></blackjack>'
+    })
     .state('project', {
       url: '/project',
       template: '<project></project>'

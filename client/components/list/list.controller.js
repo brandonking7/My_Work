@@ -19,6 +19,7 @@ function ListController(ProjectsService) {
       vm.projects = response.data.projects;
     });
   }
+  
 
 }
 
