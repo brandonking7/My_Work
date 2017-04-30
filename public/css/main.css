@@ -1,22 +1,174 @@
 body {
   font-family: 'avenir';
+  /*background-color: red;*/
+
 }
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  /*background-color: red;*/
+  width: 50%;
+  height: auto;
+  t
+}
+
+.about {
+  width: 60%;
+  margin: 75px auto;
+}
+
+.initial {
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 3.7em;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+
+}
+
+.title {
+  font-size: 24px;
+  /*font-weight: l;*/
+  padding-top: 20px;
+}
+
+.line {
+  padding-bottom: 30px;
+  font-weight: lighter;
+  l
+}
+
+.aboutme {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.space {
+  padding-bottom: 30px;
+}
+
+
+.boxlist {
+  flex-wrap: wrap;
+  float: right;
+  /*background-color: blue;*/
+  width: 50%;
+  height: auto;
+}
+.box-item {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 75px;
+}
+
+
 
 ul {
-  list-style: none;
-}
-li {
-  display: flex;
-  margin-bottom: 10px;
-}
-li span {
-  display: inline-block;
-  line-height: 50px;
-}
-li img {
-  margin-right: 10px;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  list-style:none;
+  padding-left: 0;
 
+
+}
+
+li {
+  /*display: flex;*/
+  /*justify-content: center;*/
+  margin:auto;
+  padding-bottom: 20px;
+  /*margin-right: -50px;*/
+}
+
+img{
+  border-radius:50%;
+  width: 250px;
+  height: 250px;
+}
+
+.left {
+  position: relative;
+  bottom: -20px;
+}
+
+.right {
+  position: relative;
+  top: -70px;
+}
+/*h1 {
+  font-size: 14px;
+  color: blue;
+}*/
+@media all and (max-width: 650px) {
+  .box {
+    width: 100%;
+  }
+}
+@media all and (max-width: 650px) {
+  .boxlist {
+    width: 100%;
+  }
+  .box-item {
+display: inline;
+  }
+  li {
+    display: flex;
+    justify-content: center;
+    margin:auto;
+  }
+}
+/*@media all and (min-width: 40em) {
+  .box {
+    width: 50%;
+  }
+}*/
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 33.33%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .post {
+    width: 33.3333%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .post {
+    .inner {
+      padding: 0 7.5%;
+    }
+    .title {
+      font-size: 1.5em;
+    }
+    .post_info {
+      .date, .read_length {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .post {
+    width: 100%;
+    min-height: 300px;
+    .title {
+      font-size: 1.375em;
+    }
+    .post_info {
+      .date, .read_length {
+        font-size: .9em;
+      }
+    }
+  }
+}
+
+.container {
+  /*justify-content: flex-start | flex-end | center | space-between | space-around;*/
+
+  /*color: red;*/
 }
