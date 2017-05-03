@@ -3,17 +3,42 @@ body {
   /*background-color: red;*/
 
 }
+.splash {
+  min-height: 100%;
+  min-width: 100%;
+  background: url("http://i65.tinypic.com/2aahy7m.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+.intro-text {
+  margin: auto;
+  width: 100%;
+  background-color: red;
+
+
+
+}
+.pos {
+  position: absolute;
+  /*margin: auto;*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 40%;
+
+}
 .box {
   position: fixed;
   display: flex;
   flex-wrap: wrap;
   float: left;
-  /*background-color: red;*/
   width: 50%;
   height: auto;
-
-
-  /*overflow: inherit;*/
 
 }
 
@@ -44,8 +69,8 @@ body {
 
 .line {
   padding-bottom: 30px;
-  font-weight: lighter;
-  l
+  font-weight: bold;
+
 }
 
 .aboutme {
@@ -60,13 +85,13 @@ body {
 .boxlist {
   /*flex-wrap: wrap;*/
   float: right;
-  background-color: blue;
+  /*background-color: blue;*/
   width: 50%;
   height: auto;
   /*overflow-y: scroll;*/
 }
 .box-item {
-  background-color: red;
+  /*background-color: red;*/
   display:flex;
   justify-content: center;
   align-items: center;
@@ -76,12 +101,10 @@ body {
 
 }
 .project {
-  background-color: yellow;
+  /*background-color: yellow;*/
   flex-wrap: wrap;
   display: flex;
   justify-content: flex-start;
-  /*display: inline;*/
-
   margin-right: 75px;
   width: 88%;
   height: 100%;
@@ -99,23 +122,24 @@ body {
 .cancel {
   display: flex;
   justify-content: center;
-
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
   cursor: pointer;
-  /*margin: 0;*/
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 
 .card {
   display: flex;
-
   position: relative;
   top: 100px;
   background: #fff;
   border-radius: 2px;
-  height: 400px;
-  width: 550px;
+  height: 395px;
+  width: 545px;
 
 }
 
@@ -133,16 +157,17 @@ li {
 
 }
 
-img{
+img {
   border-radius:50%;
   width: 250px;
   height: 250px;
+  background-size: cover !important
 }
 
 
 .left {
   position: relative;
-  bottom: -20px;
+  bottom: -50px;
 }
 
 .right {
@@ -184,21 +209,31 @@ img{
 
 /***** ANIMATIONS*****/
 
-ul.ng-enter {
+.animate-enter {
+	-webkit-transition: 1s linear all; /* Chrome */
+	transition: 1s linear all;
+	opacity: 0;
+}
+
+.animate-enter.animate-enter-active {
+	opacity: 1;
+}
+
+#project-list li.ng-enter {
   transition:5s ease all;
   opacity:0;
   transform: translateY(100%);
 }
-ul.ng-enter.ng-enter-active {
+#project-list li.ng-enter.ng-enter-active {
   opacity:1;
   transform: translateY(0);
 }
-ul.ng-leave {
+#project-list li.ng-leave {
   transition:0.3s ease all;
   opacity:1;
   transform: translateY(0);
 }
-ul.ng-leave.ng-leave-active {
+#project-list li.ng-leave.ng-leave-active {
   transform: translateY(-100%);
   opacity:0;
 

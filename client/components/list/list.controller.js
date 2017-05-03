@@ -5,6 +5,11 @@ function ListController(ProjectsService) {
 
   vm.projects = [];
 
+  // vm.items = ['banana', 'apple', 'grape', 'yogurt']
+  vm.items = [
+    {name: 'Paul', title: 'CEO'}
+]
+
   activate();
 
   function activate() {
@@ -19,7 +24,7 @@ function ListController(ProjectsService) {
       vm.projects = response.data.projects;
     });
   }
-  
+
 
 }
 
