@@ -25,6 +25,16 @@ function ListController(ProjectsService) {
     });
   }
 
+  $(document).ready(function() {
+
+    $('.raised').on('click',function(){ // click the link
+      // e.preventDefault(); // stop the default immediate redirect
+      $(this).addClass('smaller'); // add the animation class
+    // $(this).togglClass('square');
+
+  });
+  });
+
 
 }
 
