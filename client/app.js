@@ -26,9 +26,25 @@ angular
       url: '/blackjack',
       template: '<blackjack></blackjack>'
     })
-    .state('project', {
-      url: '/project',
-      template: '<project></project>'
+    .state('livcert', {
+      url: '/livcert',
+      template: '<livcert></livcert>'
+    })
+    .state('cornholer', {
+      url: '/cornholer',
+      template: '<cornholer></cornholer>'
+    })
+    .state('cars', {
+      url: '/cars',
+      template: '<cars></cars>'
+    })
+    .state('vagabond', {
+      url: '/vagabond',
+      template: '<vagabond></vagabond>'
+    })
+    .state('giig', {
+      url: '/giig',
+      template: '<giig></giig>'
     });
     $urlRouterProvider.otherwise('/');
   }

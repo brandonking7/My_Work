@@ -167,6 +167,21 @@ li {
   background-size: cover !important
 }
 
+.img-container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
 
 .left {
   position: relative;
@@ -334,7 +349,7 @@ display: inline;
     margin:auto;
   }
   .left {
-    
+
     padding-bottom: 30px;
   }
 }
