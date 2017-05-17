@@ -173,6 +173,7 @@ li {
   align-items: center;
   width: 80%;
   height: 80%;
+  overflow: hidden;
 
 }
 
@@ -182,6 +183,12 @@ li {
   border-radius: 3px;
 }
 
+.livcert-img {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  border-radius: 3px;
+}
 
 .left {
   position: relative;
@@ -351,6 +358,18 @@ display: inline;
   .left {
 
     padding-bottom: 30px;
+  }
+  .project {
+    margin: auto;
+
+  }
+  .cancel_positon {
+    position: relative;
+    top: -15px;
+  }
+  .card {
+    position: relative;
+    top: -5px;
   }
 }
 
