@@ -8,22 +8,22 @@ function ListController(ProjectsService) {
   // vm.items = ['banana', 'apple', 'grape', 'yogurt']
   vm.items = [
     {name: 'Paul', title: 'CEO'}
-]
+  ];
 
-  activate();
-
-  function activate() {
-    loadAllProjects();
-  }
-
-  function loadAllProjects() {
-    ProjectsService
-    .loadAll()
-    .then(function resolve(response) {
-      console.log(response)
-      vm.projects = response.data.projects;
-    });
-  }
+  // activate();
+  //
+  // function activate() {
+  //   loadAllProjects();
+  // }
+  //
+  // function loadAllProjects() {
+  //   ProjectsService
+  //   .loadAll()
+  //   .then(function resolve(response) {
+  //     console.log(response)
+  //     vm.projects = response.data.projects;
+  //   });
+  // }
 
   $(document).ready(function() {
 
