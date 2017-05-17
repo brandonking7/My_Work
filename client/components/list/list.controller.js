@@ -1,9 +1,9 @@
-ListController.$inject = ['ProjectsService'];
+ListController.$inject = [];
 
-function ListController(ProjectsService) {
+function ListController() {
   const vm = this;
 
-  vm.projects = [];
+  // vm.projects = [];
 
   // vm.items = ['banana', 'apple', 'grape', 'yogurt']
   vm.items = [
