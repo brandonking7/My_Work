@@ -8,6 +8,11 @@ const logger = require('morgan');
 app.use(express.static(__dirname + '/public'));
 
 //Server
-app.listen(4000, function() {
+// app.listen(4000, function() {
+//   console.log('Server now listening sir.');
+// });
+
+app.listen(process.env.PORT || 4000, function(){
+  // console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
   console.log('Server now listening sir.');
 });
