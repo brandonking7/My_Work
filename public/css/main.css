@@ -62,23 +62,24 @@ body {
 }
 
 .title {
-  font-size: 24px;
-  /*font-weight: l;*/
+  font-size: 26px;
+  font-weight: 500;
   padding-top: 45px;
 }
 
 .line {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   font-weight: bold;
 
 }
 
 .aboutme {
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 .space {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 
