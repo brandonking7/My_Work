@@ -26,14 +26,26 @@ function ListController() {
   // }
 
   $(document).ready(function() {
+    $("li").click(function(){
+      // $("li").addClass('animated bounceOutLeft');
+      $state.go('cars')
+      setTimeout(function () { $state.go('home') }, 5000);
+      // alert('Yo its working');
+    // setTimeout(function () { activityMonitor.sendActivity('li') }, 5000);
+});
+    $("left").click(function(){
+    setTimeout(function () { $state.go('home') }, 5000);
+});
 
-    $('.raised').on('click',function(){ // click the link
+    $('li').on('click',function(){ // click the link
       // e.preventDefault(); // stop the default immediate redirect
-      $(this).addClass('smaller'); // add the animation class
+      // $(this).addClass('zoomOut'); // add the animation class
+
     // $(this).togglClass('square');
 
   });
   });
+
 
 
 }
