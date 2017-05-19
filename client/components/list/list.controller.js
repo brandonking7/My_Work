@@ -1,6 +1,6 @@
-ListController.$inject = [];
+ListController.$inject = ['$state'];
 
-function ListController() {
+function ListController($state) {
   const vm = this;
 
   // vm.projects = [];
@@ -26,25 +26,32 @@ function ListController() {
   // }
 
   $(document).ready(function() {
-    $("li").click(function(){
-      // $("li").addClass('animated bounceOutLeft');
-      $state.go('cars')
-      setTimeout(function () { $state.go('home') }, 5000);
-      // alert('Yo its working');
-    // setTimeout(function () { activityMonitor.sendActivity('li') }, 5000);
-});
-    $("left").click(function(){
-    setTimeout(function () { $state.go('home') }, 5000);
-});
+    $('#liv').click(function(){
+      $("li").addClass('animated zoomOut');
+      setTimeout(function () { $state.go('livcert') }, 300);
+    });
+    $("#giig").click(function(){
+      $("li").addClass('animated zoomOut');
+      setTimeout(function () { $state.go('giig') }, 300);
+    });
+    $("#corn").click(function(){
+      $("li").addClass('animated zoomOut');
+      setTimeout(function () { $state.go('cornholer') }, 300);
+    });
+    $("#bj").click(function(){
+      $("li").addClass('animated zoomOut');
+      setTimeout(function () { $state.go('blackjack') }, 300);
+    });
+    $("#cars").click(function(){
+      $("li").addClass('animated zoomOut');
+      setTimeout(function () { $state.go('cars') }, 300);
+    });
+    $("#city").click(function(){
+      $("li").addClass('animated zoomOut');
+      setTimeout(function () { $state.go('vagabond') }, 300);
+    });
 
-    $('li').on('click',function(){ // click the link
-      // e.preventDefault(); // stop the default immediate redirect
-      // $(this).addClass('zoomOut'); // add the animation class
-
-    // $(this).togglClass('square');
-
-  });
-  });
+ });
 
 
 
