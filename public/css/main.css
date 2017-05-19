@@ -3,18 +3,20 @@ body {
   margin: 0px;
 }
 
+/*HomePage*/
+
 .container-home {
   padding: 0px;
 }
 
 .bg-img {
-  background: url("../images/andrew-jenkins.jpg") no-repeat center fixed;
+  background: url("../images/andrew-jenkins.jpg") no-repeat center center fixed;
   background-size: cover;
-  width: 100%;
+  /*width: 100%;*/
   height: 100vh;
   display: flex;
-  top: 0;
-  left: 0;
+  /*top: 0;
+  left: 0;*/
 }
 
 .intro-text {
@@ -27,6 +29,7 @@ body {
   text-align: center;
   color: white;
   letter-spacing: 0.40em;
+  margin-bottom: 0px;
 }
 
 .intro-text h4 {
@@ -35,16 +38,31 @@ body {
   text-align: center;
   color: white;
   letter-spacing: 0.25em;
+  margin-bottom: 30px;
 }
 
 .intro-text a {
-  font-weight: bold;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*text-align: center;*/
+  position: relative;
+  top: 100px;
+  font-weight: normal;
   /*font-size: 3em;*/
   text-align: center;
   color: white;
   letter-spacing: 0.10em;
+  text-decoration: none;
+  padding-top: 20px;
 }
 
+.intro-text a:hover {
+  font-weight: bold;
+  -webkit-transition: 0.3s linear all; /* Chrome */
+  transition: 0.3s linear all
+}
 .pos {
 
   text-align: center;
@@ -56,6 +74,97 @@ body {
   top: 40%;
 
 }
+
+.star {
+  display:block;
+  width:2px;
+  height:2px;
+  border-radius:50%;
+  background:#FFF;
+  top:100px;
+  left:400px;
+  position:absolute;
+  transform-origin:100% 0;
+  /*animation:star-ani 2s 2s ease-out;*/
+  animation:star-ani 1s 2s ease-out;
+  /*animation-delay: 4s;*/
+  animation-direction: normal;
+  opacity:0;
+}
+.star:after {
+  content:'';
+  position:absolute;
+  top:0px;
+  left:4px;
+  border:2px solid #F00;
+  border-width:2px 150px 2px 150px;
+  border-color:transparent transparent transparent #FFF;
+  transform:rotate(-45deg) translate3d(1px, -1px, 0);
+  transform-origin:0% 100%;
+  /*animation:shooting-ani 2s 2s ease-out;*/
+  animation:shooting-ani 1s 2s ease-out;
+  /*animation-delay: 4s;*/
+  animation-direction: normal;
+}
+
+.red {
+  top:150px;
+  left:500px;
+  background:#FFF;
+  animation-delay:6.2s;
+}
+.red:after {
+  border-color:transparent transparent transparent #FFF ;
+  animation-delay:6.2s;
+}
+
+.pink {
+  top:150px;
+  left:900px;
+  background:#FFF;
+  animation-delay:2.2s;
+}
+.pink:after {
+  border-color:transparent transparent transparent #FFF ;
+  animation-delay:2.2s;
+}
+
+
+.blue {
+  top:100px;
+  left:450px;
+  background:#FFF;
+  animation-delay:4.5s;
+}
+.blue:after {
+  border-color:transparent transparent transparent #FFF;
+  animation-delay:4.5s;
+}
+
+.yellow {
+  top:50px;
+  left:600px;
+  background:#FFF;
+  animation-delay:5.8s;
+}
+.yellow:after {
+  border-color:transparent transparent transparent #FFF;
+  animation-delay:5.8s;
+}
+.black {
+  top:150px;
+  left:1200px;
+  background:#FFF;
+  animation-delay:5s;
+}
+.black:after {
+  border-color:transparent transparent transparent #FFF;
+  animation-delay:5s;
+}
+
+
+/*End HomePage*/
+
 .box {
   position: fixed;
   display: flex;
@@ -183,8 +292,6 @@ li {
 
 }
 
-
-
 .img-content {
   border-radius:50%;
   width: 250px;
@@ -259,50 +366,7 @@ li {
 
 /***** ANIMATIONS*****/
 
-.animate-enter {
-	-webkit-transition: 1s linear all; /* Chrome */
-	transition: 1s linear all;
-	opacity: 0;
-}
 
-.animate-enter.animate-enter-active {
-	opacity: 1;
-}
-
-#project-list li.ng-enter {
-
-}
-
-
-.fade.ng-enter {
-  transition:0.5s linear all;
-  opacity:0;
-}
-
-/* The finishing CSS styles for the enter animation */
-.fade.ng-enter.ng-enter-active {
-  opacity:1;
-}
-
-.main.ng-enter {
-  -webkit-transition: 0.3s linear all; /* Chrome */
-	transition: 0.3s linear all;
-	opacity: 0;
-  transform: translateY(100%);
-}
-.main.ng-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-}
-.main.ng-leave {
-  transition: 0.3s linear all;
-  opacity: 1;
-  transform: translateY(0);
-}
-.main.ng-leave-active {
-  opacity: 0;
-  transform: translateY(-100%);
-}
 
 
 .smaller {
@@ -316,6 +380,44 @@ li {
   border-radius: 50%;
   text-align: center;
 
+}
+/*
+20%, 100% {
+    opacity: 0;
+    transform: translate(200px, 0);
+  }
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }*/
+
+@-webkit-keyframes shooting-ani {
+  0% {
+
+  }
+  50% {
+    transform:scale(1) rotate(-45deg) translate(0px, 0px);
+  }
+  100% {
+    transform:scale(0.5) rotate(-45deg) translate(0px, -1px);
+  }
+}
+
+@-webkit-keyframes star-ani {
+  0% {
+    opacity:0;
+    transform:scale(0) rotate(0) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity:1;
+    transform:scale(1) rotate(0) translate3d(-200px, 200px, 0);
+  }
+  100% {
+    opacity:0;
+    transform:scale(1) rotate(0) translate3d(-300px, 300px, 0);
+  }
 }
 
 @keyframes dissolve {
@@ -340,10 +442,8 @@ li {
       opacity: 0;
     }
 }
-/*h1 {
-  font-size: 14px;
-  color: blue;
-}*/
+
+/*Responsiveness*/
 
 @media all and (max-width: 950px) {
 
