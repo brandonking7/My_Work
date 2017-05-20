@@ -28,27 +28,27 @@ function ListController($state) {
   $(document).ready(function() {
     $('#liv').click(function(){
       $("li").addClass('animated zoomOut');
-      setTimeout(function () { $state.go('livcert') }, 300);
+      setTimeout(function () { $state.go('livcert') }, 100);
     });
     $("#giig").click(function(){
       $("li").addClass('animated zoomOut');
-      setTimeout(function () { $state.go('giig') }, 300);
+      setTimeout(function () { $state.go('giig') }, 100);
     });
     $("#corn").click(function(){
       $("li").addClass('animated zoomOut');
-      setTimeout(function () { $state.go('cornholer') }, 300);
+      setTimeout(function () { $state.go('cornholer') }, 100);
     });
     $("#bj").click(function(){
       $("li").addClass('animated zoomOut');
-      setTimeout(function () { $state.go('blackjack') }, 300);
+      setTimeout(function () { $state.go('blackjack') }, 100);
     });
     $("#cars").click(function(){
       $("li").addClass('animated zoomOut');
-      setTimeout(function () { $state.go('cars') }, 300);
+      setTimeout(function () { $state.go('cars') }, 100);
     });
     $("#city").click(function(){
       $("li").addClass('animated zoomOut');
-      setTimeout(function () { $state.go('vagabond') }, 300);
+      setTimeout(function () { $state.go('vagabond') }, 100);
     });
 
  });

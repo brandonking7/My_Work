@@ -14,9 +14,9 @@ angular
       url: '/',
       template: '<home></home>'
     })
-    .state('about', {
-      url: '/about',
-      template: '<about></about>'
+    .state('portfolio', {
+      url: '/portfolio',
+      template: '<portfolio></portfolio>'
     })
     .state('list', {
       url: '/list',

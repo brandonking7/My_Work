@@ -1,3 +1,5 @@
+
+
 body {
   font-family: 'avenir';
   margin: 0px;
@@ -176,6 +178,16 @@ body {
 
 }
 
+/*.menu {
+  position: relative;
+  width: 30px;
+  left: -95px;
+  top: -50px;
+  margin: 0px;
+  padding: 0px;
+  height: 10px;
+}*/
+
 .about {
   width: 60%;
   margin: 75px auto;
@@ -192,6 +204,7 @@ body {
   height: 45px;
   border-radius: 50%;
   background-color: black;
+  overflow: hidden;
 
 }
 
