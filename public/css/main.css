@@ -294,6 +294,7 @@ li {
   margin:auto;
   padding-bottom: 20px;
   animation-duration: 100s;
+  cursor: pointer;
   /*animation-delay: 10s;*/
 
 
