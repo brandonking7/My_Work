@@ -5,10 +5,9 @@ function ListController($state) {
 
   // vm.projects = [];
 
-  // vm.items = ['banana', 'apple', 'grape', 'yogurt']
-  vm.items = [
-    {name: 'Paul', title: 'CEO'}
-  ];
+  // vm.items = [
+  //   {name: 'Paul', title: 'CEO'}
+  // ];
 
   // activate();
   //

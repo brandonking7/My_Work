@@ -45,11 +45,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*text-align: center;*/
   position: relative;
   top: 100px;
   font-weight: normal;
-  /*font-size: 3em;*/
   text-align: center;
   color: white;
   letter-spacing: 0.10em;
@@ -84,9 +82,7 @@ body {
   left:400px;
   position:absolute;
   transform-origin:100% 0;
-  /*animation:star-ani 2s 2s ease-out;*/
   animation:star-ani 1s 2s ease-out;
-  /*animation-delay: 4s;*/
   animation-direction: normal;
   opacity:0;
 }
@@ -100,9 +96,7 @@ body {
   border-color:transparent transparent transparent #FFF;
   transform:rotate(-45deg) translate3d(1px, -1px, 0);
   transform-origin:0% 100%;
-  /*animation:shooting-ani 2s 2s ease-out;*/
   animation:shooting-ani 1s 2s ease-out;
-  /*animation-delay: 4s;*/
   animation-direction: normal;
 }
 
@@ -230,20 +224,17 @@ body {
 .space {
   padding-bottom: 20px;
   animation-duration: 1ms;
-  /*animation-delay: 1s;*/
 }
 
 
 .boxlist {
-  /*flex-wrap: wrap;*/
+
   float: right;
-  /*background-color: blue;*/
   width: 50%;
   height: auto;
-  /*overflow-y: scroll;*/
 }
 .box-item {
-  /*background-color: red;*/
+
   display:flex;
   justify-content: center;
   align-items: center;
@@ -308,13 +299,9 @@ li {
   padding-bottom: 20px;
   animation-duration: 100s;
   cursor: pointer;
-  /*animation-delay: 10s;*/
-
 
 }
-/*.liv {
 
-}*/
 
 .img-content {
   border-radius:50%;
@@ -340,6 +327,8 @@ li {
 }
 
 .livcert-img {
+  display: flex;
+  justify-content: center;
   margin: auto;
   width: 50%;
   height: auto;
