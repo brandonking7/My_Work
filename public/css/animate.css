@@ -86,6 +86,7 @@
 
 .pulse {
   animation-name: pulse;
+  animation-delay: 2s;
 }
 
 @keyframes rubberBand {
