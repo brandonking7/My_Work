@@ -1,5 +1,6 @@
-#My Portfolio Site
-#Angular and Node App
+#### My Portfolio Site
+----
+#### Angular and Node App
 Welcome to my Portfolio. I built this site with Nodejs and Augular also added some animations.
 
 ````
